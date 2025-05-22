@@ -5,8 +5,6 @@
 #include <mapzonelib>
 #include <smlib>
 
-#define PLUGIN_VERSION "1.0"
-
 #define XYZ(%1) %1[0], %1[1], %1[2]
 
 enum struct ZoneData {
@@ -184,11 +182,10 @@ bool g_bClientWasDead[MAXPLAYERS+1];
 
 public Plugin myinfo = 
 {
-	name = "Map Zone Library (Updated)",
+	name = "Map Zone Library (Fixed)",
 	author = "Peace-Maker, heapy",
 	description = "Manages zones on maps and fires forwards, when players enter or leave the zone.",
-	version = PLUGIN_VERSION,
-	url = "https://www.wcfan.de/"
+	url = "https://github.com/heapyxyz/mzl-fixed"
 }
 
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max)
